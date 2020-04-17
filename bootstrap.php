@@ -8,10 +8,10 @@ $module_name = ucwords( str_replace( '-', ' ', $module_slug ) );
 
 // Prepare template string replacements
 $replacements = [
-	'moduleName'  => $module_name,
-	'modulename'  => strtolower( $module_name ),
-	'moduleSlug'  => $module_slug,
-	'module_slug' => str_replace( '-', '_', $module_slug ),
+	'moduleName'  => $module_name, // Format: Module Name
+	'modulename'  => strtolower( $module_name ), // Format: module name
+	'moduleSlug'  => $module_slug, // Format: module-name
+	'module_slug' => str_replace( '-', '_', $module_slug ), // Format: module_name
 ];
 
 // Write files
